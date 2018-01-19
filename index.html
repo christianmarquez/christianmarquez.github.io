@@ -1,116 +1,155 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hey! It's Christian!</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/tether.min.css">
-	<link rel="stylesheet" type="text/css" href="css/tether-theme-basic.min.css">
-	<link rel="stylesheet" type="text/css" href="css/slick.css">
-	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/tether.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/fontawesome-all.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
-  <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-	<script type="text/javascript" src="js/slick.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-</head>
-<body>
-  <div id="fullpage">
-	<nav id="nav" class="navbar navbar-toggleable-md">
-		<div class="container">
-			<button class="navbar-toggler navbar-toggler-right navbar-inverse menu-icon" type="button">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<a class="navbar-brand text-green" href="index.html">
-				<h2>Hey!</h2>
-			</a>
+    <head>
+        <title>Hey! It's Christian!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/tether.min.css">
+        <link rel="stylesheet" type="text/css" href="css/tether-theme-basic.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
+        <link rel="stylesheet" type="text/css" href="css/default.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/tether.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+        <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="md-modal md-effect-12" id="modal-12">
+            <div class="md-content">
+                <h3>Modal Dialog</h3>
+                <div>
+                    <p>This is a modal window. You can do the following things with it:</p>
+                    <ul>
+                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
+                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
+                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
+                    </ul>
+                    <button class="md-close">Close me!</button>
+                </div>
+            </div>
+        </div>
+        <div id="fullpage">
+        	<nav id="nav" class="navbar navbar-toggleable-md">
+        		<div class="container">
+        			<button class="navbar-toggler navbar-toggler-right navbar-inverse menu-icon" type="button">
+        				<span class="navbar-toggler-icon"></span>
+        			</button>
+        			<a class="navbar-brand" href="index.html">
+        				<h2>christian marquez</h2>
+        			</a>
 
-			<div class="collapse navbar-collapse d-none d-md-flex d-lg-flex" id="navbarsExampleDefault">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link"><i class="fas fa-envelope mr-2	"></i> christianmarquez45@gmail.com</a>
-					</li>
-					
-				</ul>
-			</div>
-		</div>
-	</nav>
-   	<div class="bg-blue section">
-   		
-   	</div>
-    <section class="section">
-   	<div class="toolbar mb2 mt2">
-  <button class="btn fil-cat" href="" data-rel="all">All</button>
-  <button class="btn fil-cat" data-rel="web">Websites</button>
-  <button class="btn fil-cat" data-rel="flyers">Flyers</button>
-  <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
-</div> 
- 
-<div style="clear:both;"></div>   
-<div id="portfolio">
-  <div class="tile scale-anm web all">
-        <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm bcards all">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm web all">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm web all">
-            <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm flyers all">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
-  </div>
-  <div class="tile scale-anm bcards all">
-            <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-  </div>
-  <div class="tile scale-anm flyers all">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm flyers all">
-    <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm web all">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-  </div>
-  <div class="tile scale-anm flyers all">
-           <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" /> 
-  </div>
-  <div class="tile scale-anm web all">
-        <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm bcards all">
-            <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt="" />
-  </div>
-  <div class="tile scale-anm web all">
-       <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" /> 
-  </div>
-  <div class="tile scale-anm bcards all">
-          <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />  
-  </div>
-  <div class="tile scale-anm web all">
-            <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
-  </div> 
-  <div class="tile scale-anm web all">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />  
-  </div> 
-  <div class="tile scale-anm bcards all">     
-            <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
-  </div>
-</div>
+        			<div class="collapse navbar-collapse d-none d-md-flex d-lg-flex" id="navbarsExampleDefault">
+        				<ul class="navbar-nav ml-auto">
+        					<li class="nav-item active">
+        						<p class="nav-link"><i class="fas fa-envelope mr-2	"></i> christianmarquez45@gmail.com</p>
+        					</li>
+        					
+        				</ul>
+        			</div>
+        		</div> <!-- end of container -->
+        	</nav> <!-- end of nav -->
+           	<div class="section text-center fold" style="background-image: url(img/bg.jpg);background-size:cover;">
+           		<h1>Hello, my name is Ian. I am a 
+                    <span class="typer" id="main" data-words="Front End Developer, Web Designer" data-colors="white" data-delay="100" data-deleteDelay="1500"></span>
+                    <span class="cursor" data-owner="main"></span>
+                    <h1> living in Laguna, Ph.</h1>
+                </h1>
+           	</div> <!-- end of fold -->
+            <section class="section portfolio-section">
 
-<div style="clear:both;"></div>  
-</section> 
-</div>
-</body>
+                <div class="container">
+                    <div class="row">
+
+           	            <div class="toolbar mb2 mt2">
+                            <button class="btn fil-cat" href="" data-rel="all">All</button>
+                            <button class="btn fil-cat" data-rel="web">Websites</button>
+                            <button class="btn fil-cat" data-rel="flyers">Flyers</button>
+                            <button class="btn fil-cat" data-rel="bcards">Business Cards</button>
+                        </div> <!-- end of toolbar -->
+                        <div style="clear:both;"></div>   
+                        <div id="portfolio">
+
+                            <div class="tile scale-anm web all">
+                            <button class="md-trigger" data-modal="modal-12">Just Me</button>
+                                <!-- <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/2-mon_1092-300x234.jpg" alt="" /> -->
+                            </div>
+                            <div class="tile scale-anm bcards all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/codystretch-300x270.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm flyers all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />
+                            </div>
+                            <div class="tile scale-anm bcards all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+                            </div>
+                            <div class="tile scale-anm flyers all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/jti-icons_08-300x172.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm flyers all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+                            </div>
+                            <div class="tile scale-anm flyers all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" /> 
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/the-ninetys-brand_02-300x300.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm bcards all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/15-dia_1092-1-300x300.jpg" alt="" />
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" /> 
+                            </div>
+                            <div class="tile scale-anm bcards all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/emi_haze-300x201.jpg" alt="" />  
+                            </div>
+                            <div class="tile scale-anm web all">
+                                <img src="http://demo.themerain.com/charm/wp-content/uploads/2015/04/transmission_01-300x300.jpg" alt="" />
+                            </div> 
+                            <div class="tile scale-anm web all">
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97190&w=350&h=190" alt="" />  
+                            </div> 
+                            <div class="tile scale-anm bcards all">     
+                                <img src="https://placeholdit.imgix.net/~text?txtsize=19&txt=200%C3%97290&w=200&h=290" alt="" />
+                            </div>
+                        </div> <!-- End of portfolio -->
+                        <div style="clear:both;"></div>  
+                    </div> <!-- end of row -->
+                </div> <!-- end of container -->
+            </section> <!-- end of scroll section -->
+        </div> <!-- end of fullpage -->
+        <div class="md-overlay"></div><!-- the overlay element -->
+
+        <script type="text/javascript" src="js/typer.js"></script>
+        <!-- classie.js by @desandro: https://github.com/desandro/classie -->
+        <script src="js/classie.js"></script>
+        <script src="js/modalEffects.js"></script>
+
+        <!-- for the blur effect -->
+        <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
+        <script>
+            // this is important for IEs
+            var polyfilter_scriptpath = '/js/';
+        </script>
+        <script src="js/cssParser.js"></script>
+        <!-- <script src="js/css-filters-polyfill.js"></script> -->
+    </body>
 </html>

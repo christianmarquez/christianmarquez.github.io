@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:100,300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Damion');
+
 body{
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Amaranth', sans-serif;
   font-weight: 400;
 }
 img {
@@ -134,8 +136,24 @@ position: relative;
   width: 60%;
 }
 .fold{
-	height: calc(100vh - 84.16px);
-	position: relative;
+  position: relative;
+}
+.fold:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .6;
+background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.fp-tableCell{
+  position: relative;
+  z-index: 1;
 }
 a {
     color: #fff;
@@ -228,27 +246,26 @@ background-color: #fff;
     -moz-column-width: 33.33333333333333%;
     column-width: 33.33333333333333%;
 }
-.tile { 
+#portfolio .tile { 
     -webkit-transform: scale(0);
     transform: scale(0);
     -webkit-transition: all 350ms ease;
     transition: all 350ms ease;
 
 }
-.tile:hover { 
+#portfolio .tile:hover { 
 
 }
 
-.scale-anm {
+#portfolio .scale-anm {
   transform: scale(1);
 }
 
 
-p{ 
+#portfolio p{ 
   padding:10px; 
   border-bottom: 1px #ccc dotted; 
   text-decoration: none; 
-  font-family: lato; 
   text-transform:uppercase; 
   font-size: 12px; 
   color: #333; 
@@ -256,21 +273,22 @@ p{
   float:left;
 }
 
-p:hover { 
+#portfolio p:hover { 
   cursor:pointer; 
   background: #333; 
   color:#eee; }
 
-.tile img {
+#portfolio .tile img {
     max-width: 100%;
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
   
 }
-
-.btn {
-    font-family: Lato;
+.portfolio-section{
+  padding: 40px 0;
+}
+.portfolio-section .btn {
     font-size: 1rem;
     font-weight: normal;
     text-decoration: none;
@@ -287,11 +305,11 @@ p:hover {
     background-color: rgba(0, 0, 0, 0);
 }
 
-.btn:hover {
+.portfolio-section .btn:hover {
   text-decoration: none;
 }
 
-.btn:focus {
+.portfolio-section .btn:focus {
   outline: none;
   border-color: var(--darken-2);
   box-shadow: 0 0 0 3px var(--darken-3);
@@ -301,4 +319,15 @@ p:hover {
   border: 0;
   padding: 0;
 }
-
+#main {
+    color: #8eff87 !important;
+}
+.navbar-brand{
+  font-family: 'Damion', cursive;
+}
+.fold h1{
+  color: #fff;
+}
+.portfolio-section .fp-scrollable{
+  overflow: inherit;
+}
