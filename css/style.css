@@ -364,6 +364,9 @@ a {
         display: flex;
         justify-content: space-evenly;
     }
+    .svg-inline--fa {
+        margin: 0 auto !important;
+    }
 }
 
 
