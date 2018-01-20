@@ -424,7 +424,7 @@ background-color: #fff;
     bottom:0;
   }
   .portfolio:hover img {
-    top:-30px;
+    transform: scale(1.3);
   }  
 
   

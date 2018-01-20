@@ -29,7 +29,7 @@ $(function () {
             filter: '.filter' 
           },
           load: {
-            filter: '.all'  
+            filter: '.design'  
           }     
         });               
       
@@ -45,6 +45,8 @@ $(function () {
 
   $(document).ready(function() {
       $('#fullpage').fullpage({
-        scrollOverflow: true
+        scrollOverflow: true,
+        css3:false,
+        scrollOverflowReset: true
       });
     });
