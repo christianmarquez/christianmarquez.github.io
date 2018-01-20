@@ -18,9 +18,6 @@ perspective effects (not including the modals and the overlay).
 	perspective: 600px;
 }
 
-.container {
-	min-height: 100%;
-}
 
 .md-modal {
 	position: fixed;

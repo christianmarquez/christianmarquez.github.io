@@ -253,16 +253,16 @@ background-color: #fff;
     transition: all 350ms ease;
 
 }
-#portfolio .tile:hover { 
+/*#portfolio .tile:hover { 
 
 }
-
+*/
 #portfolio .scale-anm {
   transform: scale(1);
 }
 
 
-#portfolio p{ 
+/*#portfolio p{ 
   padding:10px; 
   border-bottom: 1px #ccc dotted; 
   text-decoration: none; 
@@ -271,7 +271,7 @@ background-color: #fff;
   color: #333; 
   display:block; 
   float:left;
-}
+}*/
 
 #portfolio p:hover { 
   cursor:pointer; 
@@ -282,7 +282,6 @@ background-color: #fff;
     max-width: 100%;
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
   
 }
 .portfolio-section{
@@ -330,4 +329,50 @@ background-color: #fff;
 }
 .portfolio-section .fp-scrollable{
   overflow: inherit;
+}
+
+.tile:after{
+  transition: .2s;
+}
+#portfolio .tile p{
+  padding: 10px;
+    border-bottom: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 21px;
+    color: #fff;
+    display: block;
+}
+.tile{
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-details{
+  position: relative;
+}
+.portfolio-details:hover:after {
+  transition: .2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+}
+.portfolio-details.website:hover:after {
+  content: 'Web Design';
+}
+.portfolio-details.illustration:hover:after {
+  content: 'Illustration';
+}
+.portfolio-details:after {
+  transition: .2s;
+  opacity: 0;
+}
+.toolbar {
+    width: 80%;
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0 auto;
 }
