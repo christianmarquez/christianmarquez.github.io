@@ -14,7 +14,6 @@ $(document).ready(function($) {
      $('#menu-slide').toggleClass('show');
   });
 });
-
 $(function () {
     
     var filterList = {
@@ -43,8 +42,4 @@ $(function () {
     
   }); 
 
-  $(document).ready(function() {
-      $('#fullpage').fullpage({
-        scrollOverflow: true
-      });
-    });
+  

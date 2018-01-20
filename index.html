@@ -6,78 +6,99 @@
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/tether.min.css">
         <link rel="stylesheet" type="text/css" href="css/tether-theme-basic.min.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
-        <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
-        <link rel="stylesheet" type="text/css" href="css/default.css" />
-        <link rel="stylesheet" type="text/css" href="css/component.css" />
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/tether.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
+        <script defer src="js/fontawesome-all.min.js"></script>
         <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
-        <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
-        <script src="js/modernizr.custom.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
     </head>
     <body>
-        <div class="md-modal md-effect-12" id="modal-12">
-            <div class="md-content">
-                <h3>Modal Dialog</h3>
-                <div>
-                    <p>This is a modal window. You can do the following things with it:</p>
-                    <ul>
-                        <li><strong>Read:</strong> modal windows will probably tell you something important so don't forget to read what they say.</li>
-                        <li><strong>Look:</strong> a modal window enjoys a certain kind of attention; just look at it and appreciate its presence.</li>
-                        <li><strong>Close:</strong> click on the button below to close the modal.</li>
-                    </ul>
-                    <button class="md-close">Close me!</button>
+        	
+           	<div class="align-items-center justify-content d-flex section text-center fold " style="background-image: url(img/bg.jpg);background-size:cover;height: 80vh;">
+                <div class="w-md-100 w-75 mx-auto" style="z-index: 2;">
+                    <div>
+                        <img src="img/logo.jpg" class="logo rounded-circle mx-auto">
+                    </div>
+                    <div>
+                   		<h1>Hi, I'm Ian. I design & build <br/> 
+                            <span class="typer" id="main" data-words="Web Applications, Landing Pages, User interfaces, Logos " data-colors="white" data-delay="100" data-deleteDelay="1500"></span>
+                            <span class="cursor" data-owner="main"></span>
+                        </h1>
+                    </div>
+                    <div class="mt-4">
+                        <a class="email" href="mailto:christianmarquez45@gmail.com" target="_top"><i class="fas fa-envelope mr-2 "></i> christianmarquez45@gmail.com</a>
+                    </div>
+                    <div>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/marky939" target="_blank">
+                                    <i class="fab fa-facebook-f text-white"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.behance.net/marky939" target="_blank">
+                                    <i class="fab fa-behance text-white"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/marky939/" target="_blank">
+                                    <i class="fab fa-linkedin-in text-white"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div id="fullpage">
-        	<nav id="nav" class="navbar navbar-toggleable-md">
-        		<div class="container">
-        			<button class="navbar-toggler navbar-toggler-right navbar-inverse menu-icon" type="button">
-        				<span class="navbar-toggler-icon"></span>
-        			</button>
-        			<a class="navbar-brand" href="index.html">
-        				<h2>christian marquez</h2>
-        			</a>
+                    
+                     
 
-        			<div class="collapse navbar-collapse d-none d-md-flex d-lg-flex" id="navbarsExampleDefault">
-        				<ul class="navbar-nav ml-auto">
-        					<li class="nav-item active">
-        						<p class="nav-link"><i class="fas fa-envelope mr-2	"></i> christianmarquez45@gmail.com</p>
-        					</li>
-        					
-        				</ul>
-        			</div>
-        		</div> <!-- end of container -->
-        	</nav> <!-- end of nav -->
-           	<div class="section text-center fold" style="background-image: url(img/bg.jpg);background-size:cover;">
-           		<h1>Hello, my name is Ian. I am a 
-                    <span class="typer" id="main" data-words="Front End Developer, Web Designer" data-colors="white" data-delay="100" data-deleteDelay="1500"></span>
-                    <span class="cursor" data-owner="main"></span>
-                    <h1> living in Laguna, Ph.</h1>
-                </h1>
-                <div>
-                    <i class="fas fa-long-arrow-down"></i>
-                </div>
            	</div> <!-- end of fold -->
             <section class="section portfolio-section">
 
                 <div class="container">
                     <div class="row">
-                        <ul id="filters" class="clearfix">
-                            <li><span class="filter active" data-filter=".all">All</span></li>
-                            <li><span class="filter" data-filter=".web">Web Development</span></li>
-                            <li><span class="filter" data-filter=".design">Design</span></li>
-                            <li><span class="filter" data-filter=".personal">Personal Work</span></li>
-                            <li><span class="filter" data-filter=".illustration">Illustration</span></li>
+                        <ul id="filters" class="d-flex justify-content-around list-inline">
+                            <li class="list-inline-item">
+                                <span class="filter active bold-text" data-filter=".all">
+                                    <!-- <i class="fas fa-bars mr-2"></i> -->
+                                    All
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="filter" data-filter=".web">
+                                    <i class="fas fa-code mr-2"></i>
+                                    <span>
+                                    Web Development
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="filter" data-filter=".design">
+                                    <i class="fas fa-edit  mr-2"></i>
+                                    <span>
+                                        Design
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="filter" data-filter=".personal">
+                                    <i class=" fas fa-user-secret mr-2"></i>
+                                    <span>
+                                        Personal Work
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="list-inline-item">
+                                <span class="filter" data-filter=".illustration">
+                                    <i class="fas fa-paint-brush  mr-2"></i>
+                                    <span>
+                                        Illustration
+                                    </span>
+                                </span>
+                            </li>
                         </ul>
            	            <div id="portfoliolist">
                             <div class="portfolio personal design all" data-cat="personal, design, all">
@@ -204,20 +225,7 @@
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
             </section> <!-- end of scroll section -->
-        </div> <!-- end of fullpage -->
 
         <script type="text/javascript" src="js/typer.js"></script>
-        <!-- classie.js by @desandro: https://github.com/desandro/classie -->
-        <script src="js/classie.js"></script>
-        <script src="js/modalEffects.js"></script>
-
-        <!-- for the blur effect -->
-        <!-- by @derSchepp https://github.com/Schepp/CSS-Filters-Polyfill -->
-        <script>
-            // this is important for IEs
-            var polyfilter_scriptpath = '/js/';
-        </script>
-        <script src="js/cssParser.js"></script>
-        <!-- <script src="js/css-filters-polyfill.js"></script> -->
     </body>
 </html>
