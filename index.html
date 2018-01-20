@@ -16,7 +16,7 @@
         <script type="text/javascript" src="js/tether.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/fontawesome-all.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
         <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
         <script type="text/javascript" src="js/scrolloverflow.min.js"></script>
         <script src="js/modernizr.custom.js"></script>
@@ -71,59 +71,97 @@
 
                 <div class="container">
                     <div class="row">
+                        <ul id="filters" class="clearfix">
+                            <li><span class="filter active" data-filter=".all">All</span></li>
+                            <li><span class="filter" data-filter=".web">Web Development</span></li>
+                            <li><span class="filter" data-filter=".design">Design</span></li>
+                            <li><span class="filter" data-filter=".personal">Personal Work</span></li>
+                            <li><span class="filter" data-filter=".illustration">Illustration</span></li>
+                        </ul>
+           	            <div id="portfoliolist">
+                            <div class="portfolio personal design all" data-cat="personal, design, all">
+                                <div class="portfolio-wrapper">
+                                    <a class="text-title" href="https://www.behance.net/gallery/42012199/Web-Design-Template-for-Service-Company" target="_blank">             
+                                        <img src="img/personal-web.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper">
+                                    <a class="text-title" href="http://maruka-dev.herokuapp.com/en/">
+                                        <img src="img/Home.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper">     
+                                    <a class="text-title" href="http://www.chris-pay.com/">        
+                                        <img src="img/chrispay.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web all" data-cat="web, all">
+                                <div class="portfolio-wrapper">    
+                                    <a class="text-title" href="https://tlcwallet.com/login">         
+                                        <img src="img/tlcwallet.png"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web all" data-cat="web, all">
+                                <div class="portfolio-wrapper">      
+                                    <a class="text-title" href="https://tlcwallet.com/login">       
+                                        <img src="img/ambrose.png"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web all" data-cat="web, all">
+                                <div class="portfolio-wrapper">  
+                                    <a class="text-title" href="https://dev.theglobalmall.com/en">           
+                                        <img src="img/globalmall.png"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo --> 
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper">    
+                                    <a class="text-title" href="http://tmc.devhub.ph/">         
+                                        <img src="img/tmc.png"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper">    
+                                    <a class="text-title" href="www.remax.ph">         
+                                        <img src="img/remax.jpg">
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio personal design all" data-cat="personal, design, all">
+                                <div class="portfolio-wrapper">    
+                                    <a class="text-title" href="https://www.behance.net/gallery/35216277/Vibranto">         
+                                        <img src="img/personal-web2.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper">   
+                                    <a class="text-title" href="https://www.behance.net/gallery/35216277/Vibranto">          
+                                        <img src="img/personal-web3.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                            <div class="portfolio web design all" data-cat="web, design, all">
+                                <div class="portfolio-wrapper"> 
+                                    <a class="text-title" href="https://www.behance.net/gallery/35216277/Vibranto">            
+                                        <img src="img/personal-web3.jpg"/>
+                                    </a>
+                                </div>
+                            </div>    <!-- end of portfolio logo -->
+                        </div> <!-- end of portfoliolist --> 
 
-           	            <div class="toolbar mb-4">
-                            <button class="btn fil-cat" href="" data-rel="all">All</button>
-                            <button class="btn fil-cat" data-rel="dev">Web Development</button>
-                            <button class="btn fil-cat" data-rel="personal">Personal</button>
-                            <button class="btn fil-cat" data-rel="design">Web Design</button>
-                            <button class="btn fil-cat" data-rel="illustration">Illustration</button>
-                        </div> <!-- end of toolbar -->
-                        <div style="clear:both;"></div>   
-                        <div id="portfolio"> <!-- <a class="md-trigger" data-modal="modal-12"> -->
-                              
-                               
-                            <div class="tile scale-anm web personal all design mb-2">
-                                <a class="md-trigger " href="https://www.behance.net/gallery/42012199/Web-Design-Template-for-Service-Company" target="_blank">
-                                    <img src="img/personal-web.jpg" alt="Website that i created in my recent company, but i changed the logo and other text" />
-                                </a> <!-- end of personal-web -->
-                            </div>  <!-- end of tile -->
-                            <div class="tile scale-anm web personal design all mb-2">
-                                <a class="md-trigger " href="https://www.behance.net/gallery/35216277/Vibranto" target="_blank">
-                                    <img src="img/personal-web2.jpg" alt="Website i created just for fun"/>
-                                </a> <!-- end of personal-web -->
-                            </div>  <!-- end of tile -->
-
-                            <div class="tile scale-anm illustration personal all mb-2">
-                                <a class="md-trigger"  href="https://www.behance.net/gallery/29951929/Heneral-Luna" target="_blank">
-                                    <img src="img/illustration-1.jpg"/>
-                                </a> <!-- end of personal-web -->
-                            </div>  <!-- end of tile -->
-
-                            <div class="tile scale-anm personal illustration all mb-2">
-                                <a class="md-trigger "  href="https://www.behance.net/gallery/28571139/Antonio-Gates" target="_blank">
-                                    <img src="img/illustration-2.jpg"/>
-                                </a> <!-- end of personal-web -->
-                            </div> <!-- end of tile -->
-                            <div class="tile scale-anm personal illustration all mb-2">
-                                <a class="md-trigger "  href="https://www.behance.net/gallery/25076247/Liam-Neeson" target="_blank">
-                                    <img src="img/illustration-3.jpg"/>
-                                </a> <!-- end of personal-web -->
-                            </div> <!-- end of tile -->
-                            <div class="tile scale-anm personal illustration all mb-2">
-                                <a class="md-trigger "  href="https://www.behance.net/gallery/18777969/Fragmented-Beast" target="_blank">
-                                    <img src="img/illustration-4.jpg"/>
-                                </a> <!-- end of personal-web -->
-                            </div> <!-- end of tile -->
-
-
-                        </div> <!-- End of portfolio -->
-                        <!-- <div style="clear:both;"></div>   -->
                     </div> <!-- end of row -->
                 </div> <!-- end of container -->
             </section> <!-- end of scroll section -->
         </div> <!-- end of fullpage -->
-        <div class="md-overlay"></div><!-- the overlay element -->
 
         <script type="text/javascript" src="js/typer.js"></script>
         <!-- classie.js by @desandro: https://github.com/desandro/classie -->
