@@ -1,0 +1,19 @@
+@media screen and (min-width: 802px) {
+    
+    .li--tablet {
+        display: none !important;
+    }
+    
+}
+
+@media screen and (max-width: 1145px) and (min-width: 801px) {
+    
+    .li--pc {
+        display: none !important;
+    }
+
+    .li--tablet {
+        display: block !important;
+    }
+
+}
